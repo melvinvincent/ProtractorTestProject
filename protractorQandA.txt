@@ -7,11 +7,19 @@ Disadvantage:
 This doesn't work when we the test as to run on firefox / ie
 
 2) how to make a test run on firefox / IE?
+
 should add the below variable in the configuration file
 
 capabilities: {
   'browserName': 'firefox'
 }
+
+For IE, to update the ie webdriver using webdriver manager since IE doesnt come with the default
+webdriver manager update
+
+webdriver-manager update --ie
+
+then add the below variable in the configuration file
 
 capabilities: {
 'browserName': 'internet explorer',
