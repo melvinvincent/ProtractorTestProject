@@ -1,0 +1,18 @@
+1) How to run the tests without starting the webdriver-manager start?
+
+Remove seleniumAddress in the configuration file
+So protactor randomly picks a port and runs on it
+
+Disadvantage:
+This doesn't work when we the test as to run on firefox / ie
+
+2) how to make a test run on firefox / IE?
+should add the below variable in the configuration file
+
+capabilities: {
+  'browserName': 'firefox'
+}
+
+capabilities: {
+'browserName': 'internet explorer',
+ },
