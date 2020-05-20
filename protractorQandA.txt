@@ -24,3 +24,19 @@ then add the below variable in the configuration file
 capabilities: {
 'browserName': 'internet explorer',
  },
+
+
+ 3) How to work on non angular websites using protractor? 
+ We should specify the below command before opening the non angular website
+ browser.waitForAngularEnabled(false);
+ Because this command will not look for any angular elements in the site and wont wait for any angular elements to load
+
+ 4) What is chaining locators / locator chaining? Or how to chain locators?
+ A child element can be found by using  a parent locator via chaining it.
+ example
+ element(by.repeater("result in memory")).element(by.css("td:nth-child(3)"))
+
+
+ 5)Which all type of methods we  need to solve promises explicitly in protractor?
+For any method which retrives data from UI we need to resolve promise explicitly while using protractor
+
